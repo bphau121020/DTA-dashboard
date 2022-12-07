@@ -4,6 +4,8 @@ Supporter: Bui Phuc Hau
 
 Model Python: Viet
 
+Link Demo: https://dta-dashboard.vercel.app/
+
 Link download all files need to run project:
 - phobert-base
 - VnCoreNLP
