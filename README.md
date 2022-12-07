@@ -1,3 +1,7 @@
+Main: Mai Le Duan (Leader)
+Supporter: Bui Phuc Hau
+Model Python: Viet
+
 Link download all files need to run project:
 - phobert-base
 - VnCoreNLP
