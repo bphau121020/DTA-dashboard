@@ -1,0 +1,55 @@
+.navbar {
+  @include flex(center, space-between);
+  padding: 14px 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: #23252a;
+  border-bottom: 3px solid #0be779;
+  pointer-events: fill;
+  color: #fff;
+  z-index: 1;
+
+  &__right {
+    @include flex(center, flex-end);
+    width: 230px;
+
+    span {
+      margin-left: 10px;
+      font-weight: bold;
+    }
+  }
+
+  &__left {
+    @include flex(center, space-between);
+    width: 230px;
+
+    &__title {
+      @include flex(center, space-between);
+      flex-direction: column;
+      margin-right: 40px;
+    }
+
+    span {
+      margin-left: 10px;
+      font-weight: bold;
+    }
+  }
+
+  &__center {
+    @include flex(center, space-between);
+    flex-direction: row;
+    width: 230px;
+    font-size: 16px;
+  }
+}
+
+.link {
+  margin-right: 34px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}

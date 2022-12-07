@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import "./variables.scss";
+@import "./base.scss";
+@import "./mixins.scss";
+@import "../pages/Login/index.scss";
+@import "../components/nav-bar/index.scss";
+@import "../components/section/index.scss";
+@import "../pages/Input/index.scss";
+
+.container {
+    width: 100%;
+    max-width: 1900px;
+}
+
+.listline {
+    &__layout {
+        padding: 0 15px;
+
+        &__content {
+            margin-top: 20px;
+            @include flex(center, center)
+        }
+    }
+}
+
+.upload-main {
+    outline: none;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: transparent;
+}
+
+::selection {
+    color: #fff;
+    background: #6990f2;
+}
+
+.wrapper {
+    width: 500px;
+    background: #23252a;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    z-index: 1;
+}
+
+.wrapper .form {
+    height: 300px;
+    display: flex;
+    cursor: pointer;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #6990f2;
+
+}
+
+.form :where(i, p) {
+    color: #6990f2;
+}
+
+.form i {
+    font-size: 50px;
+}
+
+.form p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.row {
+    margin-bottom: 10px;
+    background: #e9f0ff;
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row i {
+    color: #6990f2;
+    font-size: 30px;
+}
+
+.details span {
+    font-size: 14px;
+    color: #23252a;
+}
+
+.row .content {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+}
+
+.content .progress-bar {
+    height: 6px;
+    width: 100%;
+    margin-bottom: 4px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.content .progress-bar .progress {
+    height: 100%;
+    width: 0%;
+    background: #6990f2;
+    border-radius: inherit;
+}
+
+.button {
+    --color: #6990f2;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 4px;
+    background-color: #6990f2;
+    cursor: pointer;
+    font-weight: 500;
+    outline: none;
+    border: 1px solid var(--color);
+    font-size: 16px;
+}
+
+.button:hover {
+    color: #333;
+    background-color: #fff;
+}
+
+.size {
+    color: white;
+    font-size: 11px;
+}
